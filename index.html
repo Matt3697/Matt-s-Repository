@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Happy Birthday!!!</title>
+    	<link href="normalize.css" type="text/css" rel="stylesheet" />
+    	<link href="style.css" type="text/css" rel="stylesheet">
+    	<script language="javascript" type="text/javascript" src="http://code.createjs.com/createjs-2013.12.12.min.js" ></script>
+		<script language="javascript" type="text/javascript" src="fastclick.js"></script>
+    	<script language="javascript" type="text/javascript" src="helper.js" ></script>
+	</head>
+	<body>
+		<h1><div id="myBlinkingDiv">Happy Birthday Jessica!!!</div></h1>
+			<script>
+				var blink_speed = 500; 
+				var t = setInterval(function () {
+		    	var ele = document.getElementById('myBlinkingDiv');
+		    	ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+				}, blink_speed);
+			</script>
+		<canvas id="myCanvas"></canvas>
+	</body>
+</html>
